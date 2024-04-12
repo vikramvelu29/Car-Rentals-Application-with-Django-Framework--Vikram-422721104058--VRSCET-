@@ -1,0 +1,127 @@
+{% block content %}
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static '/css/cars/style.css' %}">
+	<title>Available Cars</title>
+</head>
+
+<body>
+	<nav>
+		<div class="heading">Offers available</div>
+        </div>
+		<span class="sideMenuButton"
+			onclick="openNavbar()">
+			☰
+		</span>
+
+		<div class="navbar">
+			<ul>
+				<link><a href="\">Home</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Side navigation bar for 
+		responsive website -->
+	<div class="sideNavigationBar"
+		id="sideNavigationBar">
+		<a href="#" class="closeButton"
+			onclick="closeNavbar()">
+			
+		</a>
+		<a href="#">Home</a>
+	</div>
+
+	<!-- Content -->
+	<div class="line" id="Home">
+		<div class="side1">
+			<h1>Vikram Car Renting Service</h1>
+		</div>
+		<div class="side2">
+			<img src=
+"https://imgd.aeplcdn.com/272x153/n/cw/ec/130591/fronx-exterior-right-front-three-quarter-109.jpeg"
+				width="700">
+		</div>
+	</div>
+
+	<section class="about" id="My Projects">
+		<div class="content">
+			<div class="title">
+				<span>Top Most Customers are Like</span>
+			</div>
+			<div class="boxes">
+				<div class="box">
+					<div class="topic">
+						<a href="" target="_blank">
+							BMW
+						</a>
+					</div>
+						<img src="https://pngimg.com/d/car_logo_PNG1641.png" alt="Car"
+                        width="200px"
+                        height="200px">
+                        <p id="mrP">Price: 2500/Per Hour</p>
+                       <form action="http://127.0.0.1:5500/pay.html"> <button>Rent</button></form>
+				</div>
+				<div class="box">
+
+					<div class="topic">
+						<a href="" target="_blank">
+							Audi
+						</a>
+					</div>
+                        <img src="https://miro.medium.com/v2/resize:fit:1400/0*tATFo6Pj-l6_r2Nd.jpg" alt="Car"
+                    width="200px"
+                    height="200px">
+                    <p id="mrP">Price: 2500/Per Hour</p>
+                        <form action="http://127.0.0.1:5500/pay.html"> <button>Rent</button></form>
+				</div>
+
+				<div class="box">
+					<div class="topic">
+						<a href="" target="_blank">
+							Toyota
+						</a>
+					</div>
+					<img src="https://i.pinimg.com/736x/28/af/9f/28af9f9e7d9a24312579eeb763670105.jpg" alt="Car"
+                    width="200px"
+                    height="200px">
+                    <p id="mrP">Price: 2500/Per Hour</p>
+                        <form action="http://127.0.0.1:5500/pay.html"> <button>Rent</button></form>
+				</div>
+                <div class="box">
+
+					<div class="topic">
+						<a href="" target="_blank">
+							Rolls Royce 
+						</a>
+					</div>
+                        <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/30181/phantom-exterior-right-front-three-quarter.jpeg" alt="Car"
+                    width="250px"
+                    height="200px">
+                    <p id="mrP">Price: 2500/Per Hour</p>
+                        <form action="http://127.0.0.1:5500/pay.html"> <button>Rent</button></form>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- Footer section -->
+	<footer>
+		<div class="footer">
+			
+		</div>
+	</footer>
+	<script src="landingpage.js"></script>
+</body>
+
+</html>
+
+
+{% endblock content %}

@@ -1,0 +1,81 @@
+{% block content %}
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            width: 100px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            margin: 0 5px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+   <h1>About Us</h1>
+</header>
+
+<nav>
+    <a href="\">Home</a>
+    <a href="{% url 'aboutus:contact' %}">Contact</a>
+</nav>
+
+<main>
+    <h2>Our Story</h2>
+    <p>"At Vikram Car Rental Service, we provide convenient and reliable car rental solutions tailored to your needs. Whether you're traveling for business or leisure, our diverse fleet of vehicles ensures there's something for everyone. With easy online booking, flexible pick-up and drop-off options, and competitive rates, we make renting a car hassle-free. Choose from economy cars to luxury sedans, and enjoy peace of mind with our comprehensive insurance options and 24/7 customer support. Experience the freedom of the open road with [Company Name] car rentals."
+
+
+
+    </p>
+</main>
+
+<footer>
+    <p>&copy; 2024 vikram Car Rental Service. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
+{% endblock content %}

@@ -1,0 +1,19 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /*background-image: url('/static/img/home/bg.png');*/
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjust as needed */
+    background-position: center;
+    height: 100%;
+}
+
+.hero{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+.hero p {
+	color: rgb(255, 255, 255);
+}
